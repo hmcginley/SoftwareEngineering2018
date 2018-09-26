@@ -1,0 +1,23 @@
+1. Reflect on any design changes you made and write a paragraph or two explaining how you approached the design
+process, and ultimately what you liked and didn’t like about your decisions. As in my original design, the quality of
+your design will be a tradeoff against the time you have and the extent to which you engage in upfront design
+versus incremental design. You will NOT lose points for pointing out things that you would like to improve in your
+design – this is all part of the reflective design process. (5 points)
+
+In order to handle the second train moving WEST-EAST, I had to change a couple logic issues. The gate previously only closed as the
+train approached the station, and opened when the train left. One problem was that for each incremental movement, the gate saw that 
+the train had left the station, so it wanted to stay open/keep reopening as the other train approached. So, I had to change the bounds
+of where the states were updated in order to run two trains in different directions. Most of my design changes came down to checking
+positions on the screen and updating things using the observer pattern. Ultimately, I did not like that a lot of my decisions revolved
+around hardcoded positions on the screen. However, I feel that refactoring in order to accomplish more abstraction in those areas
+would be more time-consuming than what this assignment called for. 
+
+
+2. In preparation for our future architectural focus, imagine that Mayor Buttigieg wants to build a simulation of traffic
+in South Bend and he asks if he can use your design – discuss whether your design (as-is) would scale up or not. List
+specific aspects that you think wouldn’t scale well. (5 points)
+
+I think it would be a good start, but it would need more precationary measures. For instance, cars' behaviors are much more unpredictable
+than in the game -- especially considering South Bend's roads and weather. The design would scale well in that the crossing gate 
+logic should remain the same, but the cars would need a lot more functionality to avoid collisions. The general observer pattern should 
+stand, but new road desions, like roundabouts, would need a lot of new functionality.
