@@ -1,2 +1,2 @@
-As of now, I have two levels laid out (walls placed), with the functionality to switch from level 1 to level 2, as well as some items
-laid out on the map that can be picked up. My next move is to add enemies and more items.
+As of now, I have two levels laid out (walls placed), with the functionality to move, complete level 1 and move to level 2, as well pick 
+up some items laid out on the map. My next move is to add enemies and more items.
