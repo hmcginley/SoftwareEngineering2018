@@ -1,0 +1,14 @@
+Pattern name: Observer
+Class Name           Role in Pattern
+Chip                  Observable
+Enemy                 Observer
+Purpose: The enemy followed Chip around on level 2, moving towards in his direction 30% of the time Chip moved.
+
+
+Pattern name: Strategy
+Class Name           Role in Pattern
+GameMap               Interface
+LevelOne              ConcreteStrategy
+LevelTwo              ConcreteStrategy
+Purpose: Develop a basic level/map interface, but implement two different versions of methods for creating and
+maintaining the levels.
