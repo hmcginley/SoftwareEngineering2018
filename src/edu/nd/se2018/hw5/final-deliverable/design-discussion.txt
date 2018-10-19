@@ -1,0 +1,11 @@
+There were a number of design decisions that I made early on, and then modifications to my design as I moved forward. First, I wanted 
+to handle how having multiple levels and changing levels, since I thought that would be one of the more difficult aspects of the game.
+I decided on creating classes for each class, since I created the map layout with a number of methods. Since both levels would share a lot
+of similar methods, I decided to use a generic game map interface and then override the methods within each class. Using this design
+actually made it very easy to manage switching levels, and handling keys/doors on different levels. I also used an observer pattern
+to handle how the enemy bug moves on level two. This added a little more fun to level two, since the bug could follow Chip around the map,
+rather than be confined to moving in a predetermined pattern. Although these both worked well, there were a number of things I wish I 
+handled differently. For one, I could have done the keys/special walls a lot more elegantly; I wish I had classes for both the keys
+and the special doors, and used a better data structure (map) to handle the counts of each key that Chip had. Also, the method for 
+removing images from the map was very troubling and ultimately I had to leave them on the map because I couldn't figure out the
+Javafx errors I was getting. 
